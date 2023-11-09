@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Карточки с контентом</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="card-container">
+        <card-component>
+            <h2 slot="header">Заголовок карточки 1</h2>
+            <div slot="content">
+                <p>Текстовое содержание карточки 1</p>
+            </div>
+        </card-component>
+        <card-component>
+            <h2 slot="header">Заголовок карточки 2</h2>
+            <div slot="content">
+                <p>Текстовое содержание карточки 2</p>
+                <div class="content-image">
+                    <img src="image.png" alt="Изображение карточки 2">
+                </div>
+               
+            </div>
+        </card-component>
+    </div>
+   
+    <div class="form-container">
+        <form id="new-card-form">
+            <input type="text" id="new-header" placeholder="Введите заголовок карточки" required>
+            <textarea id="new-content" placeholder="Введите содержимое карточки" required></textarea>
+            <input type="text" id="new-image" placeholder="Введите URL изображения">
+            <button type="submit">Создать карточку</button>
+        </form>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
